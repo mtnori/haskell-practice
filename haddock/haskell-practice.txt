@@ -22,7 +22,23 @@ minfree :: [Int] -> Int
 minfree' :: [Int] -> Int
 
 module Test
-double :: Num a => a -> a
 quadruple :: Num a => a -> a
 factorial :: (Num a, Enum a) => a -> a
 average :: Foldable t => t Int -> Int
+bools :: [Bool]
+nums :: [[Int]]
+add :: Int -> Int -> Int -> Int
+copy :: a -> (a, a)
+apply :: (a -> b) -> a -> b
+second :: [a] -> a
+swap :: (b, a) -> (a, b)
+pair :: a -> b -> (a, b)
+double :: Num a => a -> a
+palindrome :: Eq a => [a] -> Bool
+twice :: (a -> a) -> a -> a
+abs' :: Int -> Int
+signum' :: Int -> Int
+not' :: Bool -> Bool
+(&&&) :: Bool -> Bool -> Bool
+(&&&&) :: Bool -> Bool -> Bool
+(&&&&&) :: Bool -> Bool -> Bool
